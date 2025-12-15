@@ -1,4 +1,6 @@
-create database Salling_store;
+create database if not exists Salling_store;
+USE Salling_store;
+
 DROP TABLE IF EXISTS clearance_offer;
 DROP TABLE IF EXISTS sg_store;
 DROP TABLE IF EXISTS run;
@@ -31,7 +33,7 @@ CREATE TABLE clearance_offer (
   offer_start DATETIME,
   offer_end DATETIME,
   last_update DATETIME,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   
   CONSTRAINT fk_store
     FOREIGN KEY (store_id)
