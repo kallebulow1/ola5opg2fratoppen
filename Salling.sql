@@ -1,3 +1,4 @@
+create database Salling_store;
 DROP TABLE IF EXISTS clearance_offer;
 DROP TABLE IF EXISTS sg_store;
 DROP TABLE IF EXISTS run;
