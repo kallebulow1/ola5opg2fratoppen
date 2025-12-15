@@ -1,6 +1,8 @@
 create database if not exists Salling_store;
 USE Salling_store;
 
+SET FOREIGN_KEY_CHECKS = 0;
+
 DROP TABLE IF EXISTS clearance_offer;
 DROP TABLE IF EXISTS sg_store;
 DROP TABLE IF EXISTS run;
@@ -38,4 +40,10 @@ CREATE TABLE clearance_offer (
   CONSTRAINT fk_store
     FOREIGN KEY (store_id)
     REFERENCES sg_store(store_id)
+    ON DELETE CASCADE
 );
+
+
+
+
+SET FOREIGN_KEY_CHECKS = 1;
