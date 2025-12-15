@@ -52,7 +52,7 @@ con_salling <- dbConnect(
   host     = "13.53.212.244",
   dbname   = "Salling_store",
   user     = "dalremote",
-  password = "dallocal-ubuntu"
+  password = "aws-ubuntu"
 )
 
 ####### SG_STORE – 1 række for butikken #######
