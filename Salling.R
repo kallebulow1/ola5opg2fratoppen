@@ -75,7 +75,7 @@ dbWriteTable(
   con_salling,
   name      = "sg_store",
   value     = df_stores,
-  overwrite = TRUE,
+  append    = TRUE,
   row.names = FALSE
 )
 
