@@ -49,7 +49,7 @@ netto_roskilde <- df_offer %>%
 
 con_salling <- dbConnect(
   MariaDB(),
-  host     = "13.53.212.244",
+  host     = "127.0.0.1",
   dbname   = "salling_food_waste",
   user     = "dalremote",
   password = "dallocal-ubuntu"
