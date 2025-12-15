@@ -126,3 +126,4 @@ dbWriteTable(
   append    = TRUE,
   row.names = FALSE
 )
+dbDisconnect(con_salling)
