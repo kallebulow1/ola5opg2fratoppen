@@ -43,7 +43,7 @@ rownames(df_offer) <- NULL
 
 # kun tilbud fra én butik
 netto_roskilde <- df_offer %>%
-  filter(store_id == target_store_id)
+  filter(store_id %in% target_store_id)
 
 ####### SQL CONNECTION #######
 
