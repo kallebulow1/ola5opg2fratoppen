@@ -4,7 +4,7 @@ USE Salling_store;
 SET FOREIGN_KEY_CHECKS = 0;
 
 DROP TABLE IF EXISTS clearance_offer;
-
+DROP TABLE IF EXISTS sg_store;
 DROP TABLE IF EXISTS run;
 
 CREATE TABLE sg_store (
